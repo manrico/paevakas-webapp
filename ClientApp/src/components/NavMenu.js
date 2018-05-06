@@ -9,33 +9,31 @@ export class NavMenu extends Component {
 
   render() {
     return (
-      <Navbar inverse fixedTop fluid collapseOnSelect>
-        <Navbar.Header>
-          <Navbar.Brand>
-            <Link to={'/'}>paevakas_webapp</Link>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav>
-            <LinkContainer to={'/'} exact>
+<Navbar>
+  <Navbar.Header>
+    <Navbar.Brand>
+      <a href="#home">Suvaline Restoran</a>
+    </Navbar.Brand>
+  </Navbar.Header>
+  <Nav>
+     <LinkContainer to={'/'} exact>
               <NavItem>
-                <Glyphicon glyph='home' /> Home
+                <Glyphicon glyph='home' /> Meist
               </NavItem>
             </LinkContainer>
-            <LinkContainer to={'/counter'}>
+            <LinkContainer to={'/menu'}>
               <NavItem>
-                <Glyphicon glyph='education' /> Counter
+                <Glyphicon glyph='education' /> Menüü
               </NavItem>
             </LinkContainer>
-            <LinkContainer to={'/fetchdata'}>
+            <LinkContainer to={'/promotion'}>
               <NavItem>
-                <Glyphicon glyph='th-list' /> Fetch data
+                <Glyphicon glyph='th-list' /> Päevapakkumine
               </NavItem>
             </LinkContainer>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+   
+  </Nav>
+</Navbar>
     );
   }
 }

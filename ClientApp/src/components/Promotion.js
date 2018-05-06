@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-export class Counter extends Component {
-  displayName = Counter.name
+export class Promotion extends Component {
+  displayName = Promotion.name
 
   constructor(props) {
     super(props);
